@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <!-- Table with the detail of a food -->
+  <div class="container">
+  <h1><%= @food.name%>: Details</h1>
+  <br>
+  <table class="list-foods">
+    <thead>
+      <th>Name</th>
+      <th>Calories</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+    </thead>
+    <tr>
+      <td><%= @food.name %></td>     
+      <td><%= @food.calories %></td>
+      <td><%= @food.created_at %></td>     
+      <td><%= @food.updated_at %></td>    
+    </tr>
+  </table>
+  <br>
+  <!-- Edit and Delete buttons -->
+  <%= link_to("Edit", edit_food_path(@food), :class => "button")%>
+  <%= link_to("Delete", @food, method: :delete, :class => "button",
+                               data: { confirm: "Are you sure?" })%>
+  </div>
+</html>

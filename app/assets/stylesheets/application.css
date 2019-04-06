@@ -1,0 +1,114 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+body {
+    background: #3c5277;
+}
+
+footer {
+    background: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.food-square{
+    float: center;
+    width: 22%;
+    padding: 0 12px;
+    text-align: center;s
+    margin: 15px 0;
+}
+
+span {
+    color: grey;
+}
+
+header {
+    display: block;
+    height: 6rem;
+    background: #293952;
+    color: rgb(73, 78, 81);
+    padding: 0.25rem 0.75rem;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.12), 0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-right: 3.625rem;
+
+  }
+
+header button, header [type="button"],
+header a.button, header label.button, header .button,
+header a[role="button"], header label[role="button"], header [role="button"] {
+  background: #99004d;
+  color: #fff;
+  vertical-align: top;
+  margin: 0.825rem 0;
+  box-shadow: none;
+}
+
+header button:hover, header button:focus, header [type="button"]:hover, header [type="button"]:focus,
+header a.button:hover,
+header a.button:focus, header label.button:hover, header label.button:focus, header .button:hover, header .button:focus,
+header a[role="button"]:hover,
+header a[role="button"]:focus, header label[role="button"]:hover, header label[role="button"]:focus, header [role="button"]:hover, header [role="button"]:focus {
+  background: #fff;
+  color: #99004d;
+
+}
+
+header .logo, header a.button, header a[role="button"] {
+    text-decoration: none;
+  }
+  
+  header.row {
+    box-sizing: content-box;
+  }
+
+  button {
+    overflow: visible;
+    text-transform: none;
+  }
+  
+  button, [type="button"], [type="submit"], [type="reset"],
+  a.button, label.button, .button,
+  a[role="button"], label[role="button"], [role="button"] {
+    display: inline-block;
+    background: #99004d;
+    color: #fff;
+    border: 0;
+    border-radius: 0.1875rem;
+    padding: 0.625rem 1.875rem;
+    margin: 1.5rem;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.12), 0 0.1875rem 0.0625rem -0.125rem rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  button:hover, button:focus, [type="button"]:hover, [type="button"]:focus, [type="submit"]:hover, [type="submit"]:focus, [type="reset"]:hover, [type="reset"]:focus,
+  a.button:hover,
+  a.button:focus, label.button:hover, label.button:focus, .button:hover, .button:focus,
+  a[role="button"]:hover,
+  a[role="button"]:focus, label[role="button"]:hover, label[role="button"]:focus, [role="button"]:hover, [role="button"]:focus {
+    background: #ffffff;
+    color: #99004d;
+    opacity: 1;
+  }
+  

@@ -1,0 +1,30 @@
+// Place all the styles related to the Foods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+// Font Variables
+$barlow-condensed: 'Barlow Condensed', sans-serif;   
+$abril-fatface: 'Abril Fatface', cursive;
+
+// Styles
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: $barlow-condensed;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: $barlow-condensed;
+  font-weight: bold;
+  font-size: 44px;
+  color: white;
+}
+
+.button {
+  font-family: $barlow-condensed;
+  font-weight: normal;
+  font-size: 19px;
+}

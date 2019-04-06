@@ -1,0 +1,46 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+
+    display:inline-block;
+
+}
+
+.container img {
+   width: 40%;
+}
+
+.box{
+  width: 800px;
+  height: 300px;
+  margin: 0px auto; 
+
+}
+
+.welcome-title {
+    
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 74px;
+    padding-bottom: 50px;
+
+}
+
+.vertical-center {
+
+    text-align: center;
+    display:inline-block;
+	  margin: auto;
+	  vertical-align: middle;
+	  padding-top: 200px;
+  	padding-bottom: auto;
+
+}

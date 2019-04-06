@@ -1,0 +1,1049 @@
+  [1m[36m (8.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateFoods (20180211024554)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "foods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180211024554"]]
+  [1m[35m (6.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Banana' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Banana"], ["calories", 23], ["created_at", "2019-04-06 00:06:45.699776"], ["updated_at", "2019-04-06 00:06:45.699776"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Rice' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rice"], ["calories", 173], ["created_at", "2019-04-06 00:06:45.708181"], ["updated_at", "2019-04-06 00:06:45.708181"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Strawberry' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Strawberry"], ["calories", 11], ["created_at", "2019-04-06 00:06:45.715612"], ["updated_at", "2019-04-06 00:06:45.715612"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Pasta' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pasta"], ["calories", 96], ["created_at", "2019-04-06 00:06:45.723951"], ["updated_at", "2019-04-06 00:06:45.723951"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Orange' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Orange"], ["calories", 27], ["created_at", "2019-04-06 00:06:45.731388"], ["updated_at", "2019-04-06 00:06:45.731388"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Chicken' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chicken"], ["calories", 154], ["created_at", "2019-04-06 00:06:45.739986"], ["updated_at", "2019-04-06 00:06:45.739986"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Kiwi' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Kiwi"], ["calories", 21], ["created_at", "2019-04-06 00:06:45.747850"], ["updated_at", "2019-04-06 00:06:45.747850"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Asparagus' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Asparagus"], ["calories", 37], ["created_at", "2019-04-06 00:06:45.756594"], ["updated_at", "2019-04-06 00:06:45.756594"]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Granola' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Granola"], ["calories", 57], ["created_at", "2019-04-06 00:06:45.765561"], ["updated_at", "2019-04-06 00:06:45.765561"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Milk' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Milk"], ["calories", 96], ["created_at", "2019-04-06 00:06:45.774046"], ["updated_at", "2019-04-06 00:06:45.774046"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Garlic' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Garlic"], ["calories", 63], ["created_at", "2019-04-06 00:06:45.781784"], ["updated_at", "2019-04-06 00:06:45.781784"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Bread' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bread"], ["calories", 145], ["created_at", "2019-04-06 00:06:45.791148"], ["updated_at", "2019-04-06 00:06:45.791148"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Apple' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Apple"], ["calories", 11], ["created_at", "2019-04-06 00:06:45.798969"], ["updated_at", "2019-04-06 00:06:45.798969"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Cheese' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Cheese"], ["calories", 218], ["created_at", "2019-04-06 00:06:45.807868"], ["updated_at", "2019-04-06 00:06:45.807868"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Grapes' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Grapes"], ["calories", 14], ["created_at", "2019-04-06 00:06:45.816005"], ["updated_at", "2019-04-06 00:06:45.816005"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Pears' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pears"], ["calories", 28], ["created_at", "2019-04-06 00:06:45.824539"], ["updated_at", "2019-04-06 00:06:45.824539"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Soy' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Soy"], ["calories", 58], ["created_at", "2019-04-06 00:06:45.831928"], ["updated_at", "2019-04-06 00:06:45.831928"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Potatoes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Potatoes"], ["calories", 117], ["created_at", "2019-04-06 00:06:45.840052"], ["updated_at", "2019-04-06 00:06:45.840052"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Olives' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Olives"], ["calories", 73], ["created_at", "2019-04-06 00:06:45.847388"], ["updated_at", "2019-04-06 00:06:45.847388"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Tomatoes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tomatoes"], ["calories", 14], ["created_at", "2019-04-06 00:06:45.855466"], ["updated_at", "2019-04-06 00:06:45.855466"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Beef' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Beef"], ["calories", 157], ["created_at", "2019-04-06 00:06:45.862306"], ["updated_at", "2019-04-06 00:06:45.862306"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Chocolate' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chocolate"], ["calories", 87], ["created_at", "2019-04-06 00:06:45.870044"], ["updated_at", "2019-04-06 00:06:45.870044"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Onion' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Onion"], ["calories", 27], ["created_at", "2019-04-06 00:06:45.879288"], ["updated_at", "2019-04-06 00:06:45.879288"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Eggs' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Eggs"], ["calories", 59], ["created_at", "2019-04-06 00:06:45.886809"], ["updated_at", "2019-04-06 00:06:45.886809"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Raisins' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Raisins"], ["calories", 85], ["created_at", "2019-04-06 00:06:45.894385"], ["updated_at", "2019-04-06 00:06:45.894385"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Vanilla' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Vanilla"], ["calories", 17], ["created_at", "2019-04-06 00:06:45.902527"], ["updated_at", "2019-04-06 00:06:45.902527"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Tofu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tofu"], ["calories", 76], ["created_at", "2019-04-06 00:06:45.910330"], ["updated_at", "2019-04-06 00:06:45.910330"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Mango' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mango"], ["calories", 14], ["created_at", "2019-04-06 00:06:45.919049"], ["updated_at", "2019-04-06 00:06:45.919049"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:06:58 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 598ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"foods"} missing required keys: [:id]):
+    3:   <div class="container">
+    4:   	<div class="vertical-center">
+    5:       <h1 class="welcome-title">Welcome to Food Management app!</h1>"
+    6:       <%= link_to("See all foods", food_path, :class => "button")%>
+    7:     </div>
+    8:   </div>
+    9:   <body>
+  app/views/home/welcome.html.erb:6:in `_app_views_home_welcome_html_erb___15349515478247427_47304310764340'
+  app/controllers/home_controller.rb:3:in `welcome'
+
+
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.4ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (37.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:08:33 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"foods"} missing required keys: [:id]):
+    3:   <div class="container">
+    4:   	<div class="vertical-center">
+    5:       <h1 class="welcome-title">Welcome to Food Management app!</h1>"
+    6:       <%= link_to("See all foods", food_path, :class => "button")%>
+    7:     </div>
+    8:   </div>
+    9:   <body>
+  app/views/home/welcome.html.erb:6:in `_app_views_home_welcome_html_erb___15349515478247427_47304310764340'
+  app/controllers/home_controller.rb:3:in `welcome'
+
+
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.7ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.5ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:09:04 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 8713ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"foods"} missing required keys: [:id]):
+    24:         <div class="navbar-right" style="max-height: 296px, letter-spacing:4px; ">
+    25:           <a href="<%= root_url %>" class="button" />Home</a>
+    26:           <a href="<%= about_url %>" class="button" />About</a>
+    27:           <%= link_to("All Foods", food_path, :class => "button") %>
+    28:         </div>
+    29:       </div>
+    30:     </header>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb___4431629631771704283_47304310735500'
+  app/controllers/home_controller.rb:3:in `welcome'
+
+
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (12.6ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:09:13 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.2ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"foods"} missing required keys: [:id]):
+    24:         <div class="navbar-right" style="max-height: 296px, letter-spacing:4px; ">
+    25:           <a href="<%= root_url %>" class="button" />Home</a>
+    26:           <a href="<%= about_url %>" class="button" />About</a>
+    27:           <%= link_to("All Foods", food_path, :class => "button") %>
+    28:         </div>
+    29:       </div>
+    30:     </header>
+  app/views/layouts/application.html.erb:27:in `_app_views_layouts_application_html_erb___4431629631771704283_47304310735500'
+  app/controllers/home_controller.rb:3:in `welcome'
+
+
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/actionpack-4.2.11.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (17.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/lmvda/.rvm/gems/ruby-2.5.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (29.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fonts.self-f3de83c2a07c0ddf284692c433fd3957c243cb9dbdbc6248e65320b8bae88664.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/index.self-26c1e54560d8114f53a7466a550cdccdecd9ff778acf83f0de986232740e7abb.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/foods.self-7e13b89eceab6cbc09ed2f08be5c9b50bea5b2be76a87eab8cddaf2be920e8ce.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/modal.self-706f95210a5f3151dbc55bb6c15e5d74db020180b9bd4a7e9fe92933cfdd2c00.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/welcome.self-3fd1b905141a95bf09542e427e8f1a64916fb86892167ce4dff01406fea2c4bf.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/application.self-f6baa5dd149bf7a839f1396518a0776c28a5ecd10a47ad004ad5166e4a692c6b.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/custom.self-90a7ff0bd82e54543d1e6803c85cd3eaa8abdd51163f2a6085c1c917f9d65166.css?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/colors.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/foods.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/affix.self-b2bd74404ab3c627c5129dcdd3bdc2fc0a9d4bff4e1b6f1bae96412f9a1e9723.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/alert.self-7c7aa23778284da0e4aa395a0a6d858c7efd891c9312fe71908b28292654ac0c.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/button.self-b7a8ce9f47662b97ab74ef3dd416e93d3a4f644b252307a28231976a0149feef.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self-c2c0ad2347d3fdd8447abd9d5792efed40ad5afadc5e0de3001e34904a6f68ce.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self-4db094cc14a1aafa93e51e6f298115323037bb9e24c060dd0de52f27446f6227.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self-7efa4aa654357ae664a98ec52151c25cd4927eacd1fabe038d068d9344b62cbd.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/modal.self-4ca048907279f4bb9187ba2541ae5d03296917d5c42e8fef0b58ec31c8902f0f.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-e62629e47ba5fe8b7faaa745f2fef2ccdb1bfd56ffb4f95615684ef40c74bcc4.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/tab.self-7fbfa844201ceeb4b896e4d185a33df19a284fe461281b7c0f78dbea2ef6da5a.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/transition.self-3c74f1999fcbf39cfb240b67c9a9e900863859f82f53fb27e5a388fe5e1a1c5c.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self-82858d5843f55bfed321ea59fc5b180f3d2a8afc498ebc4d665561110b807875.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap/popover.self-a1e6d4555fb912f0405099135eaddbe8273ba8f08323477a471d34419d57b446.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 127.0.0.1 at 2019-04-06 01:09:41 +0100
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:09:47 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.1ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (29.7ms)
+  Rendered layouts/_modal.html.erb (0.3ms)
+  Rendered foods/index.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 93ms (Views: 88.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2019-04-06 01:09:48 +0100
+Processing by FoodsController#new as JS
+  Rendered foods/_new.html.erb (31.7ms)
+  Rendered foods/new.js.erb (37.2ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:09:51 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:09:51 +0100
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:09:52 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (35.8ms)
+  Rendered layouts/_modal.html.erb (0.0ms)
+  Rendered foods/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 115ms (Views: 113.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:09:53 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 92ms (Views: 91.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:09:53 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:09:53 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:09:53 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.3ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (30.3ms)
+  Rendered layouts/_modal.html.erb (0.0ms)
+  Rendered foods/index.html.erb within layouts/application (32.8ms)
+Completed 200 OK in 118ms (Views: 116.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/foods/28" for 127.0.0.1 at 2019-04-06 01:09:55 +0100
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT 1[0m  [["id", 28]]
+  Rendered foods/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 73ms (Views: 62.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/foods/28/edit" for 127.0.0.1 at 2019-04-06 01:10:03 +0100
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mFood Load (0.1ms)[0m  SELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT 1  [["id", 28]]
+  Rendered foods/_new.html.erb (3.2ms)
+  Rendered foods/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 91ms (Views: 89.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/foods/28/edit" for 127.0.0.1 at 2019-04-06 01:10:05 +0100
+Processing by FoodsController#edit as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT 1[0m  [["id", 28]]
+  Rendered foods/_new.html.erb (2.4ms)
+  Rendered foods/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 77ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:10:12 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:10:14 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 75ms (Views: 74.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:10:15 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.7ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (1.2ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (36.1ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (39.5ms)
+Completed 200 OK in 116ms (Views: 112.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:10:15 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 61.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:10:16 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (32.0ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 116ms (Views: 114.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:10:17 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:10:18 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 74ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:10:18 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.3ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (37.6ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 104ms (Views: 102.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/foods/28" for 127.0.0.1 at 2019-04-06 01:10:24 +0100
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT 1[0m  [["id", 28]]
+  Rendered foods/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:10:35 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:10:36 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.3ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (35.6ms)
+  Rendered layouts/_modal.html.erb (0.0ms)
+  Rendered foods/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 122ms (Views: 119.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:10:37 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 98ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:10:37 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:10:39 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (36.8ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 133ms (Views: 130.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/foods?utf8=%E2%9C%93&sort_by=name+DESC" for 127.0.0.1 at 2019-04-06 01:10:41 +0100
+Processing by FoodsController#index as HTML
+  Parameters: {"utf8"=>"✓", "sort_by"=>"name DESC"}
+  [1m[35mFood Load (0.3ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.1ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (15.3ms)
+  Rendered layouts/_modal.html.erb (0.0ms)
+  Rendered foods/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 77ms (Views: 75.5ms | ActiveRecord: 0.5ms)
+  [1m[36m (7.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (6.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateFoods (20180211024554)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "foods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180211024554"]]
+  [1m[35m (6.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Banana' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Banana"], ["calories", 23], ["created_at", "2019-04-06 00:15:26.128212"], ["updated_at", "2019-04-06 00:15:26.128212"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Rice' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rice"], ["calories", 173], ["created_at", "2019-04-06 00:15:26.136033"], ["updated_at", "2019-04-06 00:15:26.136033"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Strawberry' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Strawberry"], ["calories", 11], ["created_at", "2019-04-06 00:15:26.142959"], ["updated_at", "2019-04-06 00:15:26.142959"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Pasta' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pasta"], ["calories", 96], ["created_at", "2019-04-06 00:15:26.151497"], ["updated_at", "2019-04-06 00:15:26.151497"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Orange' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Orange"], ["calories", 27], ["created_at", "2019-04-06 00:15:26.158420"], ["updated_at", "2019-04-06 00:15:26.158420"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Chicken' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chicken"], ["calories", 154], ["created_at", "2019-04-06 00:15:26.166212"], ["updated_at", "2019-04-06 00:15:26.166212"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Kiwi' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Kiwi"], ["calories", 21], ["created_at", "2019-04-06 00:15:26.173580"], ["updated_at", "2019-04-06 00:15:26.173580"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Asparagus' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Asparagus"], ["calories", 37], ["created_at", "2019-04-06 00:15:26.181492"], ["updated_at", "2019-04-06 00:15:26.181492"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Granola' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Granola"], ["calories", 57], ["created_at", "2019-04-06 00:15:26.188857"], ["updated_at", "2019-04-06 00:15:26.188857"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Milk' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Milk"], ["calories", 96], ["created_at", "2019-04-06 00:15:26.196687"], ["updated_at", "2019-04-06 00:15:26.196687"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Garlic' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Garlic"], ["calories", 63], ["created_at", "2019-04-06 00:15:26.206039"], ["updated_at", "2019-04-06 00:15:26.206039"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Bread' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bread"], ["calories", 145], ["created_at", "2019-04-06 00:15:26.213950"], ["updated_at", "2019-04-06 00:15:26.213950"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Apple' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Apple"], ["calories", 11], ["created_at", "2019-04-06 00:15:26.221231"], ["updated_at", "2019-04-06 00:15:26.221231"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Cheese' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Cheese"], ["calories", 218], ["created_at", "2019-04-06 00:15:26.229021"], ["updated_at", "2019-04-06 00:15:26.229021"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Grapes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Grapes"], ["calories", 14], ["created_at", "2019-04-06 00:15:26.235869"], ["updated_at", "2019-04-06 00:15:26.235869"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Pears' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pears"], ["calories", 28], ["created_at", "2019-04-06 00:15:26.243710"], ["updated_at", "2019-04-06 00:15:26.243710"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Soy' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Soy"], ["calories", 58], ["created_at", "2019-04-06 00:15:26.250487"], ["updated_at", "2019-04-06 00:15:26.250487"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Potatoes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Potatoes"], ["calories", 117], ["created_at", "2019-04-06 00:15:26.258482"], ["updated_at", "2019-04-06 00:15:26.258482"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Olives' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Olives"], ["calories", 73], ["created_at", "2019-04-06 00:15:26.265669"], ["updated_at", "2019-04-06 00:15:26.265669"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Tomatoes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tomatoes"], ["calories", 14], ["created_at", "2019-04-06 00:15:26.273599"], ["updated_at", "2019-04-06 00:15:26.273599"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Beef' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Beef"], ["calories", 157], ["created_at", "2019-04-06 00:15:26.280914"], ["updated_at", "2019-04-06 00:15:26.280914"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Chocolate' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chocolate"], ["calories", 87], ["created_at", "2019-04-06 00:15:26.288940"], ["updated_at", "2019-04-06 00:15:26.288940"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Onion' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Onion"], ["calories", 27], ["created_at", "2019-04-06 00:15:26.296270"], ["updated_at", "2019-04-06 00:15:26.296270"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Eggs' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Eggs"], ["calories", 59], ["created_at", "2019-04-06 00:15:26.304344"], ["updated_at", "2019-04-06 00:15:26.304344"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Raisins' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Raisins"], ["calories", 85], ["created_at", "2019-04-06 00:15:26.311375"], ["updated_at", "2019-04-06 00:15:26.311375"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Vanilla' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Vanilla"], ["calories", 17], ["created_at", "2019-04-06 00:15:26.319426"], ["updated_at", "2019-04-06 00:15:26.319426"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Tofu' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tofu"], ["calories", 76], ["created_at", "2019-04-06 00:15:26.326303"], ["updated_at", "2019-04-06 00:15:26.326303"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Mango' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mango"], ["calories", 14], ["created_at", "2019-04-06 00:15:26.334495"], ["updated_at", "2019-04-06 00:15:26.334495"]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:15:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 1748ms (Views: 1056.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:15:40 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (1.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (85.7ms)
+  Rendered layouts/_modal.html.erb (0.3ms)
+  Rendered foods/index.html.erb within layouts/application (103.7ms)
+Completed 200 OK in 229ms (Views: 208.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/foods/new" for 127.0.0.1 at 2019-04-06 01:15:42 +0100
+Processing by FoodsController#new as JS
+  Rendered foods/_new.html.erb (35.0ms)
+  Rendered foods/new.js.erb (36.6ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods?utf8=%E2%9C%93&sort_by=SORT+BY" for 127.0.0.1 at 2019-04-06 01:15:47 +0100
+Processing by FoodsController#index as HTML
+  Parameters: {"utf8"=>"✓", "sort_by"=>"SORT BY"}
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.1ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (27.6ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 135ms (Views: 133.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/fonts.self-f3de83c2a07c0ddf284692c433fd3957c243cb9dbdbc6248e65320b8bae88664.css?body=1" for 127.0.0.1 at 2019-04-06 01:15:47 +0100
+
+
+Started GET "/foods/27" for 127.0.0.1 at 2019-04-06 01:15:49 +0100
+Processing by FoodsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[35mFood Load (1.4ms)[0m  SELECT  "foods".* FROM "foods" WHERE "foods"."id" = ? LIMIT 1  [["id", 27]]
+  Rendered foods/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 108ms (Views: 91.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:15:55 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:15:55 +0100
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:15:57 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (20.4ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 135ms (Views: 133.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:15:57 +0100
+
+
+Started GET "/foods?page=2" for 127.0.0.1 at 2019-04-06 01:16:00 +0100
+Processing by FoodsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mFood Load (0.2ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 10
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (1.3ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 10
+  Rendered foods/_foods.html.erb (42.2ms)
+  Rendered layouts/_modal.html.erb (0.0ms)
+  Rendered foods/index.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 125ms (Views: 122.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/foods?page=3" for 127.0.0.1 at 2019-04-06 01:16:02 +0100
+Processing by FoodsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 20[0m
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 20
+  Rendered foods/_foods.html.erb (45.4ms)
+  Rendered layouts/_modal.html.erb (0.2ms)
+  Rendered foods/index.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 152ms (Views: 149.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:16:09 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 89ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:16:10 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 82ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:16:10 +0100
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:16:10 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:16:11 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:16:11 +0100
+  [1m[36m (7.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (6.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateFoods (20180211024554)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "foods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "calories" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180211024554"]]
+  [1m[35m (6.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Banana' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Banana"], ["calories", 23], ["created_at", "2019-04-06 00:16:43.027706"], ["updated_at", "2019-04-06 00:16:43.027706"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Rice' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Rice"], ["calories", 173], ["created_at", "2019-04-06 00:16:43.035652"], ["updated_at", "2019-04-06 00:16:43.035652"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Strawberry' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Strawberry"], ["calories", 11], ["created_at", "2019-04-06 00:16:43.043373"], ["updated_at", "2019-04-06 00:16:43.043373"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Pasta' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pasta"], ["calories", 96], ["created_at", "2019-04-06 00:16:43.050498"], ["updated_at", "2019-04-06 00:16:43.050498"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Orange' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Orange"], ["calories", 27], ["created_at", "2019-04-06 00:16:43.058847"], ["updated_at", "2019-04-06 00:16:43.058847"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Chicken' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chicken"], ["calories", 154], ["created_at", "2019-04-06 00:16:43.067072"], ["updated_at", "2019-04-06 00:16:43.067072"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Kiwi' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Kiwi"], ["calories", 21], ["created_at", "2019-04-06 00:16:43.076434"], ["updated_at", "2019-04-06 00:16:43.076434"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Asparagus' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Asparagus"], ["calories", 37], ["created_at", "2019-04-06 00:16:43.084584"], ["updated_at", "2019-04-06 00:16:43.084584"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Granola' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Granola"], ["calories", 57], ["created_at", "2019-04-06 00:16:43.093175"], ["updated_at", "2019-04-06 00:16:43.093175"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Milk' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Milk"], ["calories", 96], ["created_at", "2019-04-06 00:16:43.101766"], ["updated_at", "2019-04-06 00:16:43.101766"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Garlic' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Garlic"], ["calories", 63], ["created_at", "2019-04-06 00:16:43.110501"], ["updated_at", "2019-04-06 00:16:43.110501"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Bread' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Bread"], ["calories", 145], ["created_at", "2019-04-06 00:16:43.118417"], ["updated_at", "2019-04-06 00:16:43.118417"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Apple' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Apple"], ["calories", 11], ["created_at", "2019-04-06 00:16:43.127621"], ["updated_at", "2019-04-06 00:16:43.127621"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Cheese' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Cheese"], ["calories", 218], ["created_at", "2019-04-06 00:16:43.136003"], ["updated_at", "2019-04-06 00:16:43.136003"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Grapes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Grapes"], ["calories", 14], ["created_at", "2019-04-06 00:16:43.144729"], ["updated_at", "2019-04-06 00:16:43.144729"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Pears' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Pears"], ["calories", 28], ["created_at", "2019-04-06 00:16:43.152420"], ["updated_at", "2019-04-06 00:16:43.152420"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Soy' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Soy"], ["calories", 58], ["created_at", "2019-04-06 00:16:43.161826"], ["updated_at", "2019-04-06 00:16:43.161826"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Potatoes' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Potatoes"], ["calories", 117], ["created_at", "2019-04-06 00:16:43.169862"], ["updated_at", "2019-04-06 00:16:43.169862"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Olives' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Olives"], ["calories", 73], ["created_at", "2019-04-06 00:16:43.177892"], ["updated_at", "2019-04-06 00:16:43.177892"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Tomatoes' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tomatoes"], ["calories", 14], ["created_at", "2019-04-06 00:16:43.185743"], ["updated_at", "2019-04-06 00:16:43.185743"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Beef' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Beef"], ["calories", 157], ["created_at", "2019-04-06 00:16:43.194702"], ["updated_at", "2019-04-06 00:16:43.194702"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Chocolate' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chocolate"], ["calories", 87], ["created_at", "2019-04-06 00:16:43.203080"], ["updated_at", "2019-04-06 00:16:43.203080"]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Onion' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Onion"], ["calories", 27], ["created_at", "2019-04-06 00:16:43.212070"], ["updated_at", "2019-04-06 00:16:43.212070"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Eggs' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Eggs"], ["calories", 59], ["created_at", "2019-04-06 00:16:43.220625"], ["updated_at", "2019-04-06 00:16:43.220625"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Raisins' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Raisins"], ["calories", 85], ["created_at", "2019-04-06 00:16:43.230177"], ["updated_at", "2019-04-06 00:16:43.230177"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Vanilla' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Vanilla"], ["calories", 17], ["created_at", "2019-04-06 00:16:43.237991"], ["updated_at", "2019-04-06 00:16:43.237991"]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Tofu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tofu"], ["calories", 76], ["created_at", "2019-04-06 00:16:43.247006"], ["updated_at", "2019-04-06 00:16:43.247006"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFood Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "foods" WHERE "foods"."name" = 'Mango' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "foods" ("name", "calories", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mango"], ["calories", 14], ["created_at", "2019-04-06 00:16:43.254831"], ["updated_at", "2019-04-06 00:16:43.254831"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:29:48 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1127ms (Views: 566.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:29:50 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.2ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.2ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (36.3ms)
+  Rendered layouts/_modal.html.erb (0.2ms)
+  Rendered foods/index.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 117ms (Views: 113.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:29:53 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.2ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (22.6ms)
+  Rendered layouts/_modal.html.erb (0.0ms)
+  Rendered foods/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:29:53 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:29:53 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:29:53 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:29:54 +0100
+Processing by FoodsController#index as HTML
+  [1m[35mFood Load (0.6ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.2ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (33.9ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (36.2ms)
+Completed 200 OK in 114ms (Views: 112.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:29:55 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:29:56 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 91ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:29:57 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 84ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:29:57 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (36.5ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (38.9ms)
+Completed 200 OK in 125ms (Views: 121.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/foods?utf8=%E2%9C%93&sort_by=SORT+BY" for 127.0.0.1 at 2019-04-06 01:35:14 +0100
+Processing by FoodsController#index as HTML
+  Parameters: {"utf8"=>"✓", "sort_by"=>"SORT BY"}
+  [1m[35mFood Load (0.4ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "foods"[0m
+  [1m[35mFood Load (0.2ms)[0m  SELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0
+  Rendered foods/_foods.html.erb (21.0ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2019-04-06 01:35:14 +0100
+
+
+Started GET "/assets/application.self-b5567fb0cb73f9d4ecd4fa178bbc995d9efe2b53da5e5bf4ca587adb307de5b1.js?body=1" for 127.0.0.1 at 2019-04-06 01:35:14 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2019-04-06 01:35:14 +0100
+Processing by HomeController#welcome as HTML
+  Rendered home/welcome.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-04-06 01:35:15 +0100
+Processing by HomeController#about as HTML
+  Rendered home/about.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:35:15 +0100
+
+
+Started GET "/foods" for 127.0.0.1 at 2019-04-06 01:35:16 +0100
+Processing by FoodsController#index as HTML
+  [1m[36mFood Load (0.4ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 10 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "foods"
+  [1m[36mFood Load (0.3ms)[0m  [1mSELECT  "foods".* FROM "foods"  ORDER BY created_at DESC LIMIT 1 OFFSET 0[0m
+  Rendered foods/_foods.html.erb (43.9ms)
+  Rendered layouts/_modal.html.erb (0.1ms)
+  Rendered foods/index.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 180ms (Views: 177.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/background-image.jpg" for 127.0.0.1 at 2019-04-06 01:35:16 +0100

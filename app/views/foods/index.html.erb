@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <div class="container">
+    <h1>List of All Foods</h1>
+
+    <%= link_to("Add Food", new_food_path(@food), :class => "button", :remote => true, 'data-toggle' =>  "modal", 'data-target' => '#exampleModal')%>
+
+    <!-- A drop down list for sorting - by name,calories -->
+    <div class="sort-filter">
+        <%= form_tag(foods_url, {:method => 'get'}) do |f| %>
+        
+            <select name="sort_by" id="sort_by">
+                <!-- Sort By -->
+                <option <%= !@sort_param ? "selected" : "" %>>SORT BY</option>
+                <option value="name ASC" <%= "name ASC" === @sort_param ? "selected" : "" %>>Name ASC</option>
+                <option value="name DESC" <%= "name DESC" === @sort_param ? "selected" : "" %>>Name DESC</option>
+                <option value="calories ASC" <%= "calories ASC" === @sort_param ? "selected" : "" %>>Calories ASC</option>
+                <option value="calories DESC" <%= "calories DESC" === @sort_param ? "selected" : "" %>>Calories DESC</option>
+            </select>
+
+            <%= submit_tag('OK', :name => nil) %>
+        <% end %>
+    </div>
+ </div>
+
+  <!-- Render: table with list of all foods -->
+  <div class="foods-container">
+      <%= render partial: "foods", locals: {foods: @foods} %>
+  </div>
+
+  <!-- Put in the page where the modal window will appear -->
+  <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
+  <%= render "layouts/modal" %>
+
+</html>
+
+
+
+
+
+
+

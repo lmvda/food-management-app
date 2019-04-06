@@ -1,0 +1,37 @@
+// Place all the styles related to the Foods controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  list-style-type: none;
+}
+
+.list-foods {
+    border: solid 1px #293952;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #FFF;
+
+    margin-left:auto; 
+    margin-right:auto;
+}
+.list-foods thead th {
+    background-color: #293952;
+    border: solid 1px #293952;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+.list-foods tbody td {
+    border: solid 1px #293952;
+    color: #333;
+    padding: 7px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.paginate {
+    color: white;
+}
+

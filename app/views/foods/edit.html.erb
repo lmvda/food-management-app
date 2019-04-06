@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <div class="container">
+  <%# Display validation errors in form %>
+  <% if @food.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@food.errors.count, "error") %>
+        prohibited this food from being saved:
+      </h2>
+   
+      <ul class="list-unstyled">
+      <% @food.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="edit-box">
+  <h1>Edit Food</h1>
+  <%= render partial: "new", locals: {food: @food} %>
+  </div>
+</div>
+</html>

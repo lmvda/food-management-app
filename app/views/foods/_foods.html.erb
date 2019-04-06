@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+    <div class="container">
+      <div class="center">
+        <table class="list-foods">
+          <thead class="header">
+            <tr>
+              <th>Name</th>
+              <th>Calories</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @foods.each do |food| %>
+            <tr>
+              <td> <li><%= link_to food.name, food_path(food)  %></li></td>     
+              <td><%= food.calories %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <div class="paginate">
+            <%= page_entries_info @foods %><br>
+            <%= paginate @foods, window: 2 %><br>
+        </div>
+      </div>
+    </div>
+  </html>

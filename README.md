@@ -19,10 +19,7 @@ Start local server:
 ` rails s `
 
 
-
 ## Authors
-
-* Ana Isabel Castro
 
 * [Lúcia Abreu](https://github.com/LMVDA)
 
